@@ -1,3 +1,9 @@
+## [1.1.0](https://github.com/akzzy/Morphi-Patcho/compare/v1.0.0...v1.1.0) (2026-07-03)
+
+### ✨ New Features
+
+* add custom Gboard Package Rename patch to resolve duplicate permission conflict on Pixel ([b6a393b](https://github.com/akzzy/Morphi-Patcho/commit/b6a393b2d7f62e9e260861c32e71ea427fdcb965))
+
 ## 1.0.0 (2026-07-03)
 
 ### 🐛 Bug Fixes
