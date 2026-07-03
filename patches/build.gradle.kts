@@ -2,10 +2,10 @@ group = "app.template"
 
 patches {
     about {
-        name = "UserXYZ Patches"
-        description = "Patches for apps I like"
-        source = "git@github.com:UserXYZ/morphe-patches.git"
-        author = "Awesome dev"
+        name = "akzzy Morphi-Patcho"
+        description = "Patches for Gboard AI Writing Tools"
+        source = "git@github.com:akzzy/Morphi-Patcho.git"
+        author = "akzzy"
         contact = "na"
         website = "na"
         license = "GPLv3"
