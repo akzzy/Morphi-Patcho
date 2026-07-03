@@ -27,30 +27,6 @@ internal val COMPATIBILITY_GBOARD = Compatibility(
     )
 )
 
-// 2. Main Resource Patch (the entry point that Morphe loads)
-@Suppress("unused")
-val gboardAiWritingToolsPatch = bytecodePatch(
-    name = "AI Writing Tools",
-    description = "啟用 AI 撰寫工具，支援所有語言\nEnable AI writing tools with support for all languages.",
-    default = true
-) {
-    compatibleWith(COMPATIBILITY_GBOARD)
-
-    // Pull in the precompiled Java extension file containing our runtime logic
-    extendWith("extensions/extension.mpe")
-
-    // Bind all bytecode modification patches
-    dependsOn(gboardAiWritingToolsDependencyPatch)
-    dependsOn(gboardAiWritingToolsSettingsVisibilityPatch)
-    dependsOn(gboardAiWritingToolsFlagValuePatch)
-    dependsOn(gboardAiWritingToolsSignalPatch)
-    dependsOn(gboardAiWritingToolsOfficialPreferencesPatch)
-    dependsOn(gboardAiWritingToolsFeatureMarkerPatch)
-
-    execute {
-        // Nothing to do directly in the main patch's execute block, all work is done in dependencies
-    }
-}
 
 
 // 3. Flag Value Override Patch
@@ -246,3 +222,29 @@ internal val gboardAiWritingToolsFeatureMarkerPatch = resourcePatch(
         // Since we don't have the custom settings UI feature, this is just metadata
     }
 }
+
+// 2. Main Resource Patch (the entry point that Morphe loads)
+@Suppress("unused")
+val gboardAiWritingToolsPatch = bytecodePatch(
+    name = "AI Writing Tools",
+    description = "啟用 AI 撰寫工具，支援所有語言\nEnable AI writing tools with support for all languages.",
+    default = true
+) {
+    compatibleWith(COMPATIBILITY_GBOARD)
+
+    // Pull in the precompiled Java extension file containing our runtime logic
+    extendWith("extensions/extension.mpe")
+
+    // Bind all bytecode modification patches
+    dependsOn(gboardAiWritingToolsDependencyPatch)
+    dependsOn(gboardAiWritingToolsSettingsVisibilityPatch)
+    dependsOn(gboardAiWritingToolsFlagValuePatch)
+    dependsOn(gboardAiWritingToolsSignalPatch)
+    dependsOn(gboardAiWritingToolsOfficialPreferencesPatch)
+    dependsOn(gboardAiWritingToolsFeatureMarkerPatch)
+
+    execute {
+        // Nothing to do directly in the main patch's execute block, all work is done in dependencies
+    }
+}
+
