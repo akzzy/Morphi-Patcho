@@ -1,3 +1,9 @@
+## [1.2.0](https://github.com/akzzy/Morphi-Patcho/compare/v1.1.0...v1.2.0) (2026-07-05)
+
+### ✨ New Features
+
+* add Gboard Model Spoof patch to fake Pixel 9 Pro device information ([d331050](https://github.com/akzzy/Morphi-Patcho/commit/d33105023eca95abf7771a0906f3985817c6cec2))
+
 ## [1.1.0](https://github.com/akzzy/Morphi-Patcho/compare/v1.0.0...v1.1.0) (2026-07-03)
 
 ### ✨ New Features

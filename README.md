@@ -10,9 +10,9 @@ TODO: Update this about section with a brief introduction/summary about this rep
 ## 🩹 Patches list
 
 <!-- PATCHES_START EXPANDED -->
-> **[v1.1.0](https://github.com/akzzy/Morphi-Patcho/releases/tag/v1.1.0)**&nbsp;&nbsp;•&nbsp;&nbsp;`main`&nbsp;&nbsp;•&nbsp;&nbsp;3 patches total
+> **[v1.2.0](https://github.com/akzzy/Morphi-Patcho/releases/tag/v1.2.0)**&nbsp;&nbsp;•&nbsp;&nbsp;`main`&nbsp;&nbsp;•&nbsp;&nbsp;4 patches total
 <details open>
-<summary>📦 Gboard&nbsp;&nbsp;•&nbsp;&nbsp;2 patches</summary>
+<summary>📦 Gboard&nbsp;&nbsp;•&nbsp;&nbsp;3 patches</summary>
 <br>
 
 **🎯 Supported versions:**
@@ -23,6 +23,7 @@ TODO: Update this about section with a brief introduction/summary about this rep
 | 💊&nbsp;Patch | 📜&nbsp;Description | ⚙️&nbsp;Options |
 |----------|----------------|-----------|
 | [AI Writing Tools](#ai-writing-tools) | 啟用 AI 撰寫工具，支援所有語言<br>Enable AI writing tools with support for all languages. |  |
+| [Gboard Model Spoof (Pixel 9 Pro)](#gboard-model-spoof-pixel-9-pro) | 將 Gboard 內部讀取的裝置型號與產品名稱改為 Pixel 9 Pro，藉此解除 Pixel 8 等舊裝置的官方限制。<br>Spoof Gboard's device model, device name, and product name to Pixel 9 Pro to bypass model restrictions natively. |  |
 | [Gboard Package Rename (Pixel)](#gboard-package-rename-pixel) | 將套件名稱改成 dev.jason.com.google.android.inputmethod.latin 以便在 Pixel 等裝置共存安裝，並更名自訂權限防止衝突。<br>Rename the package to dev.jason.com.google.android.inputmethod.latin for co-existence on Pixel/system-Gboard devices, and rename custom permissions to avoid installation conflicts. |  |
 
 </details>
